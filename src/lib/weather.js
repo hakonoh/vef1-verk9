@@ -67,6 +67,7 @@ export async function weatherSearch(lat, lng) {
     forecast_days: '1',
   });
   url.search = querystring.toString();
+  console.log(url.href);
 
   const response = await fetch(url.href);
 
